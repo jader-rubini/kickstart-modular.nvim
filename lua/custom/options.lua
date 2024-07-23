@@ -11,8 +11,8 @@ opt.relativenumber = true
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
-opt.expandtab = false
+opt.expandtab = true
 opt.smartindent = true
 
--- Don't display whitespace character
+-- Don't display whitespace characters
 opt.list = false
