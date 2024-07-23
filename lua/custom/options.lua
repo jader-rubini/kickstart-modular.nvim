@@ -1,10 +1,18 @@
-print 'hello from custom options'
+-- Set netrw file explorer to tree view mode
+vim.cmd 'let g:netrw_liststyle = 3'
 
-vim.opt.relativenumber = true
+-- Just an alias
+local opt = vim.opt
+
+-- Show line numbers relative to current line
+opt.relativenumber = true
 
 -- Indent with tabs
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.opt.smartindent = true
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
+opt.expandtab = false
+opt.smartindent = true
+
+-- Don't display whitespace character
+opt.list = false
