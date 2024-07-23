@@ -1,3 +1,8 @@
 print 'hello from custom plugins init'
 
-return {}
+return {
+  {
+    'ThePrimeagen/vim-be-good',
+    opts = {},
+  },
+}
