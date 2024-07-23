@@ -33,3 +33,7 @@ keymap.set('n', '<leader><tab>c', '<cmd>tabclose<CR>', { desc = 'Close current t
 keymap.set('n', '<leader><tab>h', '<cmd>tabp<CR>', { desc = 'Go to previous tab' })
 keymap.set('n', '<leader><tab>l', '<cmd>tabn<CR>', { desc = 'Go to next tab' })
 keymap.set('n', '<leader><tab>d', '<cmd>tabnew %<CR>', { desc = 'New tab with current buffer' })
+
+-- Telescope custom bindings
+local builtin = require 'telescope.builtin'
+keymap.set('n', '<leader>gf', builtin.git_files, { desc = 'Search [G]it [F]iles' })
