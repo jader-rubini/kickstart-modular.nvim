@@ -37,3 +37,4 @@ keymap.set('n', '<leader><tab>d', '<cmd>tabnew %<CR>', { desc = 'New tab with cu
 -- Telescope custom bindings
 local builtin = require 'telescope.builtin'
 keymap.set('n', '<leader>gf', builtin.git_files, { desc = 'Search [G]it [F]iles' })
+-- keymap.set('i', '<C-h>', vim.lsp.buf.signature_help, { desc = 'Show function signature help' })
