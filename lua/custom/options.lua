@@ -7,6 +7,9 @@ local opt = vim.opt
 -- Show line numbers relative to current line
 opt.relativenumber = true
 
+-- Disable line wrapping
+opt.wrap = false
+
 -- Indent with tabs
 opt.tabstop = 4
 opt.softtabstop = 4
