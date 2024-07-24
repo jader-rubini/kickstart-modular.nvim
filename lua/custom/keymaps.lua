@@ -12,10 +12,10 @@ map('n', '<leader>O', 'm`O<Esc>``', { desc = 'Add new empty line above' })
 map('n', '<leader>o', 'm`o<Esc>``', { desc = 'Add new empty line below' })
 
 -- Move lines up or down
-map('n', '<A-k>', '<cmd>m .-2<CR>==', { desc = 'Move current line up' })
-map('n', '<A-j>', '<cmd>m .+1<CR>==', { desc = 'Move current line down' })
-map('v', '<A-k>', ":m '<-2<CR>gv=gv", { desc = 'Move selection up' })
-map('v', '<A-j>', ":m '>+1<CR>gv=gv", { desc = 'Move selection down' })
+map('n', '<C-k>', '<cmd>m .-2<CR>==', { desc = 'Move current line up' })
+map('n', '<C-j>', '<cmd>m .+1<CR>==', { desc = 'Move current line down' })
+map('v', '<C-k>', ":m '<-2<CR>gv=gv", { desc = 'Move selection up' })
+map('v', '<C-j>', ":m '>+1<CR>gv=gv", { desc = 'Move selection down' })
 
 -- Increment/decrement number under cursor
 map('n', '<C-=>', '<C-a>', { desc = 'Increment number' })
